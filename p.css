@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#liveClock {
+    font-size: 18px;
+    margin: 10px;
+}
+
+#processTable {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#processTable th, #processTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#processTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#ganttChart {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gantt-block {
+    padding: 10px;
+    margin: 2px;
+    background-color: #90ee90;
+    border: 1px solid #555;
+    min-width: 50px;
+}
+
+.sleep-block {
+    background-color: #add8e6;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: #555;
+}
+
+body.dark-mode .gantt-block {
+    background-color: #707070;
+}

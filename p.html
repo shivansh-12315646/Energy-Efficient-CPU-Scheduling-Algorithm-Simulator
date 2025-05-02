@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Energy Efficient CPU Scheduling</title>
+    <link rel="stylesheet" href="p.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Energy Efficient CPU Scheduling Simulator</h1>
+
+    <div class="input-section">
+        <input type="number" id="arrival" placeholder="Arrival Time">
+        <input type="number" id="burst" placeholder="Burst Time">
+        <button onclick="addProcess()">Add Process</button>
+        <button onclick="scheduleProcesses()">Schedule</button>
+    </div>
+
+    <div id="liveClock">CPU Time: 0</div>
+
+    <table id="processTable">
+        <thead>
+            <tr>
+                <th>PID</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+                <th>Waiting Time</th>
+                <th>Turnaround Time</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div id="status">Status: Ready</div>
+
+    <h2>Gantt Chart</h2>
+    <div id="ganttChart"></div>
+
+    <div class="results">
+        <p id="avgWait">Average Waiting Time: </p>
+        <p id="avgTAT">Average Turnaround Time: </p>
+        <p id="idleTime">Total CPU Idle Time: </p>
+    </div>
+
+    <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+
+</div>
+
+<script src="p.js"></script>
+</body>
+</html>
