@@ -19,11 +19,13 @@ This project implements an energy-efficient CPU scheduling algorithm in C, desig
 1. Clone the repository:  
    ```bash
    git clone https://github.com/shivansh-12315646/Energy-Efficient-CPU-Scheduling-Algorithm-Simulator.git
-Compile the code:
-gcc -o scheduler simulator.c
+2. Compile the code:
+   ```bash
+   gcc -o scheduler simulator.c
 
-Run the simulator:
-./scheduler
+3. Run the simulator:
+   ```bash
+   ./scheduler
 
 Review output metrics showing scheduling performance and estimated energy consumption.
 
